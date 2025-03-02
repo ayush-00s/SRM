@@ -193,6 +193,25 @@ const MedicalInfoForm = () => {
             />
           </div>
         </div>
+        <div className="mb-4">
+          <label className="block text-gray-300 mb-2">Food Prefrence</label>
+          <select
+            name="foodprefrence"
+            value={formData.foodprefrence}
+            onChange={handleChange}
+            onFocus={() => handleFocus("physician")}
+            onBlur={handleBlur}
+            className={`w-full bg-gray-800 text-white p-3 rounded border border-gray-600 focus:outline-none ${
+              focusedField === "physician" ? "focus:ring-2 focus:ring-blue-400" : ""
+            }`}
+          >
+            <option>choose one </option>
+            <option>Vegetarian</option>
+            <option>Non-Vegetarian</option>
+            
+        
+          </select>
+          </div>
 
         {/* Submit Button */}
         <button
