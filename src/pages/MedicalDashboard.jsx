@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import ToggleSwitch from "../components/ToggleSwitch";
 import TabNavigation from "../components/TabsNavigation"; // Import TabNavigation
+import NearbyDoctors from "./NearbyDoctors";
+import Exercises from "./Exercises";
 
 const MedicalDashboard = () => {
   const [selectedTab, setSelectedTab] = useState("Medical Report");
@@ -91,9 +93,9 @@ const MedicalDashboard = () => {
           </>
         )}
 
-        {selectedTab === "Nearby Doctors" && <p>Show nearby doctors list.</p>}
-        {selectedTab === "Food Recommendations" && <p>Show food recommendations.</p>}
-        {selectedTab === "Exercise & Yoga" && <p>Show exercise and yoga content.</p>}
+        {selectedTab === "Nearby Doctors" && <NearbyDoctors/>}
+        {selectedTab === "Food Recommendations" && <p>Food chart!!!</p>}
+        {selectedTab === "Exercise & Yoga" &&  <Exercises/>}
       </div>
     </div>
   );

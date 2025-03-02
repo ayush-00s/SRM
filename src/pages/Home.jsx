@@ -88,7 +88,7 @@ function Home() {
           />
         </div>
 
-        {/* Show OTP Modal When Open */}
+        
         {isOtpModalOpen && <Otpmodal onClose={() => setIsOtpModalOpen(false)} />}
       </div>
     </>
